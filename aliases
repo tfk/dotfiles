@@ -1,0 +1,30 @@
+# directory handling
+alias ..="cd .."
+alias p="cd ~/Projekte"
+alias dl="cd ~/Downloads"
+alias g="cd ~/git"
+
+# ls aliases
+if ls --color > /dev/null 2>&1; then 
+	colorflag="--color"
+else # OS X `ls`
+	colorflag="-G"
+fi
+
+alias ls="command ls $colorflag"
+alias l="ls -lFa"
+alias lsd="ls -lF | grep ^d"
+
+# hide/show files in finder
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+# hash-programs
+alias md5sum="md5"
+alias sha1sum="shasum"  
+
+# ssh-hosts
+alias gamma="ssh thomask@gamma"
+alias pi="ssh pi@raspberrypi"
+
+
