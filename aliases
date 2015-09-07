@@ -31,4 +31,15 @@ alias sha1sum="shasum"
 alias gamma="ssh thomask@gamma"
 alias pi="ssh pi@raspberrypi"
 
+# ip-addresses
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+
+# Simple Webserver
+alias webserver="python -m SimpleHTTPServer"
+
+# program configs
+alias hexdump="hexdump -C"
+
+# history grep
+alias hgrep="history | grep -i"
 
