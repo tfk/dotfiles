@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/thomask/.unisonlinks/src/c'
+let g:netrw_dirhist_2='/home/thomask/bin'
+let g:netrw_dirhist_3='/home/thomask'
+let g:netrw_dirhist_4='/home/thomask/.offlineimap'
+let g:netrw_dirhist_5='/home/thomask/projects/blizz_crawler'
+let g:netrw_dirhist_6='/Users/tkunz/dotfiles/.git'
+let g:netrw_dirhist_7='/Users/tkunz/git/Twitter-Application-Only-Authentication-OAuth-PHP'
