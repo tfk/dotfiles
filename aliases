@@ -13,7 +13,7 @@ else # OS X `ls`
 fi
 
 alias ls="command ls $colorflag"
-alias l="ls -lFa"
+alias l="ls -la"
 alias lsd="ls -lF | grep ^d"
 
 # hide/show files in finder
