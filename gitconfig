@@ -1,0 +1,34 @@
+[user]
+	name = Thomas Kunz
+	email = mail@thomas-kunz.eu
+
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+
+[core]
+	excludesfile = /Users/tkunz/.gitignore_global
+	editor = vim
+
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	st = status
+	co = commit
+	ca = commit -a
+	ap = add --patch
+	dt = difftool
+
+[diff]
+	tool = kdiff3
+
+[difftool]
+	prompt = false
+
+[difftool "kdiff3"]
+	path = /usr/local/bin/kdiff3
+
+[mergetool "kdiff3"]
+	path = /usr/local/bin/kdiff3
+
