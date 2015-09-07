@@ -9,3 +9,5 @@ set number
 set backup
 set backupdir=~/.vim/backup/
 set directory=~/.vim/tmp/
+
+nmap <silent> <F3> :NERDTreeToggle<CR>
