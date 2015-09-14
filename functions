@@ -8,7 +8,6 @@ rocketbeans(){
 	wget -O $FNAME http://rocketbeans.tv/wochenplan.jpg && open $FNAME
 }
 
-
 ocr(){
 	y="`pwd`/$1"
 	echo Will create a searchable PDF for $y
