@@ -3,7 +3,7 @@ alias ..="cd .."
 alias p="cd ~/Projekte"
 alias dl="cd ~/Downloads"
 alias g="cd ~/git"
-alias scanner="cd /Volumes/Public/Scannner"
+alias scanner="cd /Volumes/Public/Scanner"
 
 # ls aliases
 if ls --color > /dev/null 2>&1; then 
