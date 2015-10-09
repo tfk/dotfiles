@@ -19,7 +19,7 @@
 	ca = commit -a
 	ap = add --patch
 	dt = difftool
-
+	dtc = difftool --cached
 [diff]
 	tool = kdiff3
 
