@@ -34,3 +34,9 @@ ocr(){
 	cd ..
 	rm -rf $name
 }
+
+function timer() {
+	[ $# -ne 1 ] && exit 1 
+	[ $1 -ge 0 ] || exit 1 && TIME=$1
+	(sleep $1 && say "Timer abgelaufen")&
+}
