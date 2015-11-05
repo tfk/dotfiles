@@ -1,1 +1,2 @@
 export GREP_OPTIONS='--color=auto';
+PATH=$PATH:~/bin/;
