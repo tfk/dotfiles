@@ -1,5 +1,6 @@
 # directory handling
 alias ..="cd .."
+alias cd..="cd .."
 alias p="cd ~/Projekte"
 alias dl="cd ~/Downloads"
 alias g="cd ~/git"
