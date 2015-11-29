@@ -33,7 +33,7 @@ alias gamma="ssh thomask@gamma"
 alias pi="ssh pi@raspberrypi"
 
 # ip-addresses
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias extip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 # Simple Webserver
 alias webserver="python -m SimpleHTTPServer"
