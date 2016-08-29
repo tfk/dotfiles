@@ -38,7 +38,8 @@ set history=1000 " save the last 1000 commands
 set splitright " open split right to the current split
 set splitbelow " open split under the the current split
 set autoindent
-syntax on " enable syntax highlighting
+filetype plugin indent on
+syntax on
 
 " Tab Config
 set softtabstop=0
