@@ -1,3 +1,5 @@
+execute pathogen#infect()
+
 " General config
 set nocompatible " make vim usable
 set noerrorbells " no error bells
