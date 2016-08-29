@@ -1,0 +1,10 @@
+# Ideas from: https://github.com/nicksp/dotfiles/blob/master/shell/inputrc
+
+# autocomplete regardless of filename case
+set completion-ignore-case on
+
+# disable expansion of tilde to /Users/... 
+set expand-tilde off 
+
+# disable beeping and window flashing
+set bell-style none
