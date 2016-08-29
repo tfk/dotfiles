@@ -1,6 +1,8 @@
 # directory handling
 alias ..="cd .."
 alias cd..="cd .."
+
+# cd shortcuts for often used directories 
 alias p="cd ~/Projekte"
 alias dl="cd ~/Downloads"
 alias g="cd ~/git"
