@@ -24,10 +24,6 @@ alias chmox="chmod +x"
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
-# hash-programs
-alias md5sum="md5"
-alias sha1sum="shasum"  
-
 # ssh-hosts
 alias gamma="ssh thomask@gamma"
 alias pi="ssh pi@raspberrypi"
