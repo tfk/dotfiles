@@ -1,6 +1,7 @@
 # directory handling
 alias ..="cd .."
 alias cd..="cd .."
+alias mkdir="mkdir -pv" 
 
 # cd shortcuts for often used directories 
 alias p="cd ~/Projekte"
