@@ -16,7 +16,7 @@ else # OS X `ls`
 	colorflag="-G"
 fi
 
-alias ls="command ls $colorflag"
+alias ls="ls -F $colorflag"
 alias l="ls -la"
 alias lsd="ls -lF | grep ^d"
 
