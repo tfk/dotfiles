@@ -61,6 +61,8 @@ nmap <silent> <F3> :NERDTreeToggle<CR>
 " nohlsearch
 " mapleader vergeben , evtl
 
+set spelllang=de,en
+
 " Rename tabs to show tab number.
 " (Based on http://stackoverflow.com/questions/5927952/whats-implementation-of-vims-default-tabline-function)
 if exists("+showtabline")
