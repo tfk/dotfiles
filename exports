@@ -1,2 +1,8 @@
 export GREP_OPTIONS='--color=auto';
 PATH=$PATH:~/bin/;
+
+# Unlimited bash-history
+# Source: http://stackoverflow.com/questions/9457233/unlimited-bash-history
+export HISTFILESIZE=
+export HISTSIZE=
+export HISTTIMEFORMAT="[%F %T] "
