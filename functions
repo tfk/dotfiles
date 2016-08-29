@@ -58,3 +58,19 @@ function up() {
 		return 1
 	fi
 }
+
+function ts() {
+	if [ $# -eq 0 ]; then
+		date +%s;
+	else
+		for t in "$@"; do
+			if [ $(uname) = "Darwin" ]; then
+				date -r "$t"
+			else
+				date -d @$t
+			fi
+		done
+
+
+	fi
+}
