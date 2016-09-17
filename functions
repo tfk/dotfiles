@@ -70,7 +70,5 @@ function ts() {
 				date -d @$t
 			fi
 		done
-
-
 	fi
 }
