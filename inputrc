@@ -3,8 +3,31 @@
 # autocomplete regardless of filename case
 set completion-ignore-case on
 
-# disable expansion of tilde to /Users/... 
+# do not complete hidden files
+set match-hidden-files off
+
+# when in the middle of a word, don't duplicate characters behind the cursor
+set skip-completed-text on
+
+# do not ring the bell if there are many completions 
+set show-all-if-ambiguous on
+
+# disable expansion of tilde to /Users/... or /home/... 
 set expand-tilde off 
 
 # disable beeping and window flashing
 set bell-style none
+
+# append file-type character to the filename when autocompleting
+set visible-stats on
+
+# colorize file-name by type when autocompleting
+set colored-stats on
+
+# append / to symlinked directories when autocompleting
+set mark-symlinked-directories on
+
+# Allow UTF-8 input and output, instead of showing stuff like $'\0123\0456'
+set input-meta on
+set output-meta on
+set convert-meta off
