@@ -80,6 +80,7 @@ nnoremap L gt
 " new empty tab
 ca tn tabnew
 
+" Spell checker
 set spelllang=de,en
 
 " Rename tabs to show tab number.
