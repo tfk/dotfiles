@@ -47,9 +47,10 @@ au BufNewFile,BufRead *.json set ft=javascript
 au BufNewFile,BufRead *.md set ft=markdown
 
 " Tab Config
-set softtabstop=0
-set tabstop=3
-set shiftwidth=3
+set softtabstop=2
+set tabstop=2
+set shiftwidth=2
+set expandtab
 
 " Search
 set ignorecase " Ignore case when searching
