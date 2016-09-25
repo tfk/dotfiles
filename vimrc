@@ -66,6 +66,8 @@ set directory=~/.vim/tmp/
 " Key Rebinds
 " Toggle NerdTree on F3
 nmap <silent> <F3> :NERDTreeToggle<CR>
+" Toggle spell check
+nmap <silent> <F4> :set spell!<CR>
 
 set spelllang=de,en
 
