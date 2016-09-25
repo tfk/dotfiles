@@ -64,9 +64,8 @@ set backupdir=~/.vim/backup/
 set directory=~/.vim/tmp/
 
 " Key Rebinds
+" Toggle NerdTree on F3
 nmap <silent> <F3> :NERDTreeToggle<CR>
-" nohlsearch
-" mapleader vergeben , evtl
 
 set spelllang=de,en
 
