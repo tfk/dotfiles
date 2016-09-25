@@ -39,8 +39,8 @@ set history=1000 " save the last 1000 commands
 " UI config (Editor behavior)
 set splitright " open split right to the current split
 set splitbelow " open split under the the current split
-set autoindent
-filetype plugin indent on
+set autoindent " indent like the previous line
+
 syntax on
 
 " Tab Config
