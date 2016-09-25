@@ -41,7 +41,10 @@ set splitright " open split right to the current split
 set splitbelow " open split under the the current split
 set autoindent " indent like the previous line
 
+" Syntax highlighing
 syntax on
+au BufNewFile,BufRead *.json set ft=javascript
+au BufNewFile,BufRead *.md set ft=markdown
 
 " Tab Config
 set softtabstop=0
