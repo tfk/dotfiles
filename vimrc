@@ -71,6 +71,10 @@ nmap <silent> <F4> :set spell!<CR>
 " Space clears search highlight
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
+" navigate to previous tab
+nnoremap H gT
+" navigate to next tab
+nnoremap L gt
 set spelllang=de,en
 
 " Rename tabs to show tab number.
