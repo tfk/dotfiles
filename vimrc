@@ -68,6 +68,8 @@ set directory=~/.vim/tmp/
 nmap <silent> <F3> :NERDTreeToggle<CR>
 " Toggle spell check
 nmap <silent> <F4> :set spell!<CR>
+" Space clears search highlight
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 set spelllang=de,en
 
