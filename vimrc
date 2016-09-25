@@ -75,6 +75,11 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 nnoremap H gT
 " navigate to next tab
 nnoremap L gt
+
+" Command Abbreviations
+" new empty tab
+ca tn tabnew
+
 set spelllang=de,en
 
 " Rename tabs to show tab number.
