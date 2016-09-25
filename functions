@@ -35,7 +35,6 @@ function timer() {
 	(sleep $1 && say "Timer abgelaufen")&
 }
 
-
 # up directory tree X number of directories
 function up() {
 	COUNTER="$@";
