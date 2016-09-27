@@ -30,6 +30,12 @@ set mark-symlinked-directories on
 # if more than 200 completions are found ask user for listing (default: 100)
 set completion-query-items 200
 
+# Use the text that has already been typed as the prefix for searching through
+# commands (basically more intelligent Up/Down behavior)
+"\e[B": history-search-forward
+"\e[A": history-search-backward
+
+
 # Allow UTF-8 input and output, instead of showing stuff like $'\0123\0456'
 set input-meta on
 set output-meta on
