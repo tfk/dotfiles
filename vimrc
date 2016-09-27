@@ -3,6 +3,7 @@ execute pathogen#infect()
 " General config
 set nocompatible " make vim usable
 set noerrorbells " no error bells
+set t_Co=256
 set encoding=utf-8 " standard encoding utf-8
 set shortmess=atI " don't show splash screen
 set mouse=a " allow mouse in all mode
