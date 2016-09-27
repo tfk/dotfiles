@@ -9,3 +9,7 @@ shopt -s cdspell
 
 # Fix ctrl+s in reverse-i-search
 stty -ixon
+
+# complete only directories when using cd
+complete -d cd
+
