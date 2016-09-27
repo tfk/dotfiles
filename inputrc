@@ -27,6 +27,9 @@ set colored-stats on
 # append / to symlinked directories when autocompleting
 set mark-symlinked-directories on
 
+# if more than 200 completions are found ask user for listing (default: 100)
+set completion-query-items 200
+
 # Allow UTF-8 input and output, instead of showing stuff like $'\0123\0456'
 set input-meta on
 set output-meta on
