@@ -28,8 +28,6 @@ alias fshow="defaults write com.apple.finder AppleShowAllFiles -bool true && kil
 alias fhide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
 # ssh-hosts
-alias gamma="ssh thomask@gamma"
-alias pi="ssh pi@raspberrypi"
 
 # ip-addresses
 alias extip="dig +short myip.opendns.com @resolver1.opendns.com"
