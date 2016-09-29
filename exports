@@ -1,5 +1,7 @@
 PATH=$PATH:~/bin/;
 
+export EDITOR="vim"
+
 # Unlimited bash-history
 # Source: http://stackoverflow.com/questions/9457233/unlimited-bash-history
 export HISTFILESIZE=
