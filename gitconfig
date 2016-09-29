@@ -9,7 +9,7 @@
 	status = auto
 
 [core]
-	excludesfile = /Users/tkunz/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	editor = vim
 
 [alias]
