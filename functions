@@ -1,3 +1,4 @@
+# mkdir directory and cd into it
 mkcd(){
 	mkdir -p "$@" && cd $_;
 }
@@ -29,10 +30,11 @@ ocr(){
 	rm -rf $name
 }
 
+# sleep for X seconds, then use text-to-speed notifcation
 function timer() {
 	[ $# -ne 1 ] && exit 1 
 	[ $1 -ge 0 ] || exit 1 && TIME=$1
-	(sleep $1 && say "Timer abgelaufen")&
+	(sleep $1 && say "Time is up")&
 }
 
 # up directory tree X number of directories
@@ -58,6 +60,9 @@ function up() {
 	fi
 }
 
+# timestamp printing function. 
+# converts a supplied timestamp to a human-readable date
+# if no argument is supplied print the current timestamp
 function ts() {
 	if [ $# -eq 0 ]; then
 		date +%s;
@@ -72,10 +77,12 @@ function ts() {
 	fi
 }
 
+# cd to path of the currently active finder-window
 function cdf() {
   cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')";
 }
 
+# open Finder and cd to current directory
 function fcd() {
   open -a Finder ./
 }
