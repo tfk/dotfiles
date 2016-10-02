@@ -11,8 +11,8 @@ rsync --exclude ".git/" \
       --exclude ".gitignore" \
       --exclude ".DS_Store" \
 		  --exclude "bootstrap.sh" \
-		  --exclude ".vim/backup" \
-		  --exclude ".vim/tmp" \
+		  --exclude ".vim/backup/*" \
+		  --exclude ".vim/tmp/*" \
 		  -avh --no-perms . ~;
 
 
