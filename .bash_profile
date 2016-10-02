@@ -1,6 +1,21 @@
-for file in ~/.{shellconfig,aliases,prompt,exports,functions}; do
+for file in ~/.{aliases,prompt,exports,functions}; do
 	[ -r "$file" -a -f "$file" ] && source "$file";
 done
+
+# case-insensitive globbing 
+shopt -s nocaseglob
+
+# append to the history file
+shopt -s histappend
+
+# autocorrect typos in path names when using cd
+shopt -s cdspell
+
+# Fix ctrl+s in reverse-i-search
+stty -ixon
+
+# complete only directories when using cd
+complete -d cd
 
 # If possible, add tab completion for many more commands
 if [ "$(uname -s)" == "Darwin" ] &&  which brew &>/dev/null; then
