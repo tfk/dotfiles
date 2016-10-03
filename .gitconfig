@@ -10,6 +10,19 @@
 	ap = add --patch
 	dt = difftool
 	dtc = difftool --cached
+  unstage = reset HEAD
+
+  # List contributors
+  who = shortlog -s
+  
+  # Find branches containing commit
+  fb = "!f() { git branch -a --contains $1; }; f"
+
+  # Find tags containing commit
+  ft = "!f() { git describe --always --contains $1; }; f"
+
+  # Print last commit
+  last = log -1
 
 [branch]
 	autosetuprebase = always
