@@ -32,8 +32,6 @@ alias chmox="chmod +x"
 alias fshow="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias fhide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
-# ssh-hosts
-
 # ip-addresses
 alias extip="dig +short myip.opendns.com @resolver1.opendns.com"
 
