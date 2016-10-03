@@ -3,6 +3,7 @@ mkcd(){
 	mkdir -p "$@" && cd $_;
 }
 
+# perform ocr on a given file
 ocr(){
 	y="`pwd`/$1"
 	echo Will create a searchable PDF for $y
