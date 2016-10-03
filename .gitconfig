@@ -30,6 +30,10 @@
 [push]
 	default = simple
 
+[help]
+  # Automatically correct and execute mistyped commands
+  autocorrect = 1
+
 [color]
 	branch = auto
 	diff = auto
