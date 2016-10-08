@@ -46,6 +46,7 @@ set autoindent " indent like the previous line
 syntax on
 au BufNewFile,BufRead *.json set ft=javascript
 au BufNewFile,BufRead *.md set ft=markdown
+au BufNewFile,BufRead *.go set ft=go
 
 " Tab Config
 set softtabstop=2
