@@ -9,6 +9,7 @@ git submodule init && git submodule update
  
 rsync --exclude ".git/" \
       --exclude ".gitignore" \
+      --exclude ".gitmodules" \
       --exclude ".DS_Store" \
       --exclude "README.md" \
       --exclude "bootstrap.sh" \
