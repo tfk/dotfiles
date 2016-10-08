@@ -7,3 +7,6 @@ export EDITOR="vim"
 export HISTFILESIZE=
 export HISTSIZE=
 export HISTTIMEFORMAT="[%F %T] "
+
+export GOPATH="$HOME/Projekte/go"
+
