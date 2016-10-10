@@ -1,5 +1,4 @@
 # Ideas from: https://github.com/nicksp/dotfiles/blob/master/shell/inputrc
-
 # autocomplete regardless of filename case
 set completion-ignore-case on
 
@@ -34,6 +33,10 @@ set completion-query-items 200
 # commands (basically more intelligent Up/Down behavior)
 "\e[B": history-search-forward
 "\e[A": history-search-backward
+
+# Ctrl + Left/Right for jumping between words on linux
+"\e[1;5C": forward-word
+"\e[1;5D": backward-word 
 
 # Allow UTF-8 input and output, instead of showing stuff like $'\0123\0456'
 set input-meta on
