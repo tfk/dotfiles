@@ -43,6 +43,9 @@
   interactive = auto
   status = auto
 
+[status]
+  showUntrackedFiles = all
+
 [diff]
   tool = kdiff3
 
