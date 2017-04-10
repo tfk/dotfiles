@@ -24,6 +24,9 @@
   # Print last commit
   last = log -1
 
+  # stash untracked files
+  stash-all = stash save --include-untracked
+
 [branch]
   autosetuprebase = always
 
