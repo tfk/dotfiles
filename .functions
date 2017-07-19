@@ -136,3 +136,11 @@ function extract() {
   fi
 }
 
+ducks() {
+  if hash gnumfmt 2>/dev/null; then
+    du -cks * | sort -nr | head -n11 | awk '/total$/ { X = $1 }; { percent = $1 / X * 100; cmd = "gnumfmt --to=iec --from=iec --format=\"%.1f\" "$1"K"; cmd  | getline ss; close(cmd); $1 = "";  printf "%s (%.1f%%) %s\n", ss, percent, $0 }'
+  else
+    du -cks * | sort -nr | head -n11 | awk '/total$/ { X = $1 }; { percent = $1 / X * 100; ss = $1 / 1024; $1 = "";  printf "%sM (%.1f%%) %s\n", ss, percent, $0 }'
+  fi
+}
+
