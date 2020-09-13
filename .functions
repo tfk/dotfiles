@@ -142,3 +142,11 @@ ducks() {
   fi
 }
 
+function gg() {
+  if [ $(uname) = "Darwin" ]; then
+    open -a Sourcetree.app "$@"
+  else
+    gitk "$@"
+
+  fi
+}
