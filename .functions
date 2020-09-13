@@ -91,8 +91,8 @@ function fcd() {
 # external ip from https://github.com/rsp/scripts/blob/master/externalip
 function extip() {
   case "$1" in
-    ""|dns) dig +short myip.opendns.com @resolver1.opendns.com ;;
-    http) curl -s http://whatismyip.akamai.com/ && echo ;;
+    dns) dig +short myip.opendns.com @resolver1.opendns.com ;;
+    ""|http) curl -s http://whatismyip.akamai.com/ && echo ;;
     https) curl -s https://www.myexternalip.com/raw ;;
     *) echo Bad argument >&2 && exit 1 ;;
   esac
