@@ -150,3 +150,11 @@ function gg() {
 
   fi
 }
+
+function code() {
+  if [ $(uname) = "Darwin" ]; then
+    open -a "Visual Studio Code" "$@"
+  else
+    code
+  fi
+}
