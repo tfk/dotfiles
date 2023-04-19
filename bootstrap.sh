@@ -15,6 +15,17 @@ function doSync() {
 
 cd "$(dirname "${BASH_SOURCE}")";
 
+if [ which git ]; then
+  echo "git not found";
+  exit 1;
+fi
+
+if [ which rsync ]; then
+  echo "rsync not found";
+  exit 1;
+fi
+
+
 if [ "$1" == "--no-git" ]; then
   doSync;
 else
