@@ -15,12 +15,14 @@ function doSync() {
 
 cd "$(dirname "${BASH_SOURCE}")";
 
-if [ which git ]; then
+which git >/dev/null
+if [ $? -ne 0 ]; then
   echo "git not found";
   exit 1;
 fi
 
-if [ which rsync ]; then
+which rsync >/dev/null
+if [ $? -ne 0 ]; then
   echo "rsync not found";
   exit 1;
 fi
