@@ -163,7 +163,7 @@ function lsusb() {
   if [ $(uname) = "Darwin" ]; then
     system_profiler SPUSBDataType
   elif which lsusb; then
-    lsusb
+    $(which lsusb)
   fi
 
 }
