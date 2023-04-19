@@ -158,3 +158,16 @@ function code() {
     code
   fi
 }
+
+function lsusb() {
+  if which lsusb; then
+
+  fi
+  if [ $(uname) = "Darwin" ]; then
+    open -a "Visual Studio Code" "$@"
+  else
+    code
+  if 
+system_profiler SPUSBDataType
+
+}
