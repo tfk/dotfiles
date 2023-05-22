@@ -32,7 +32,7 @@ alias fshow="defaults write com.apple.finder AppleShowAllFiles -bool true && kil
 alias fhide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
 # Simple Webserver
-alias webserver="python -m SimpleHTTPServer"
+alias webserver="python3 -m http.server || python -m SimpleHTTPServer"
 
 # program configs
 alias hexdump="hexdump -C"
