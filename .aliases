@@ -42,3 +42,6 @@ alias hgrep="history | grep -i"
 
 # gen filename of current date
 alias tsf="date +%Y_%m_%d_%H_%M_%S"
+
+# execute last command with sudo
+alias fuck='sudo $(history -p !!)'
