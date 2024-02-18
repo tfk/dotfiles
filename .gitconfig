@@ -35,7 +35,7 @@
 
 [help]
   # Automatically correct and execute mistyped commands
-  autocorrect = 1
+  autocorrect = 5
 
 [color]
   branch = auto
