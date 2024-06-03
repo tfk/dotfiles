@@ -47,3 +47,5 @@ alias tsf="date +%Y_%m_%d_%H_%M_%S"
 alias fuck='sudo $(history -p !!)'
 
 alias fzfp='command -v fzf >/dev/null && fzf --preview "cat {}" || echo "fzf not found"'
+
+alias dy="dig +short @dns.toys"
