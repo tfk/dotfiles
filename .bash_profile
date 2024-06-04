@@ -32,3 +32,4 @@ else
   fi
 fi
 
+which fzf 2>&1 > /dev/null && eval "$(fzf --bash)"
