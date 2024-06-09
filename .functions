@@ -137,5 +137,27 @@ function lsusb() {
   elif which lsusb; then
     $(which lsusb)
   fi
-
 }
+
+if ! command -v pbcopy &> /dev/null; then
+  pbcopy() {
+      if command -v xsel &> /dev/null; then
+          xsel --clipboard --input
+      else
+          echo "xsel is not installed. Please install it to use pbcopy."
+          return 1
+      fi
+  }
+fi 
+
+if ! command -v pbpaste &> /dev/null; then
+  pbpaste() {
+      if command -v xsel &> /dev/null; then
+          xsel --clipboard --output
+      else
+          echo "xsel is not installed. Please install it to use pbpaste."
+          return 1
+      fi
+  }
+fi
+
