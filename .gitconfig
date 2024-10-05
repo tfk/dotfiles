@@ -58,3 +58,6 @@
 [mergetool "kdiff3"]
   path = /usr/local/bin/kdiff3
 
+[init]
+	defaultBranch = main
+
