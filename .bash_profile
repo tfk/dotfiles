@@ -1,3 +1,4 @@
+export BASH_SILENCE_DEPRECATION_WARNING=1”
 for file in ~/.{aliases,prompt,exports,functions,extra}; do
 	[ -r "$file" -a -f "$file" ] && source "$file";
 done
