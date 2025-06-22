@@ -112,6 +112,8 @@ defaults write com.apple.screencapture location -string "${HOME}/Pictures/Screen
 # When a new disk is connected, system prompts to ask if you want to use it as a backup volume.
 defaults write com.apple.TimeMachine "DoNotOfferNewDisksForBackup" -bool "false"
 
+# Don't rearragne spaces 
+defaults write com.apple.dock "mru-spaces" -bool "false"
 
 sudo sysctl net.smb.fs.kern_hard_deadtimer=0
 sudo sysctl net.smb.fs.kern_soft_deadtimer=0
